@@ -1,1 +1,9 @@
-# movie_app_2022
+# React Js Master class
+
+### 1. styled-components
+
+#### styled-components install
+
+```bash
+npm i styled-components
+```
