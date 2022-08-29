@@ -39,6 +39,11 @@ const Title = styled.h1`
   color: ${(props) => props.theme.accentColor};
 `;
 
+const Loader = styled.span`
+  display: block;
+  text-align: center;
+`;
+
 interface CoinInterface {
   id: string;
   name: string;
@@ -66,7 +71,7 @@ function Coins() {
         <Title>코인</Title>
       </Header>
       {loading ? (
-        'Loading...'
+        <Loader>Loading...</Loader>
       ) : (
         <CoinsList>
           {coins.map((coin) => (
